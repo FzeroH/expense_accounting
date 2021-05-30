@@ -26,36 +26,49 @@
         app:layout_constraintTop_toBottomOf="@+id/PieChart">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:clickable="true"
             android:textColor="@color/white"
-            android:text="Добавить"
-            android:textSize="18dp" />
+            android:text="@string/txt_add_button"
+            android:textSize="@dimen/txt_menu_size"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            app:drawableTopCompat="@drawable/ic_add_button"
+            tools:ignore="SpUsage" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:textColor="@color/white"
-            android:text="Фильтр"
-            android:textSize="18dp" />
+            android:text="@string/txt_filter_button"
+            android:textSize="@dimen/txt_menu_size"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            app:drawableTopCompat="@drawable/ic_filter_button"
+            tools:ignore="SpUsage" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:textColor="@color/white"
-            android:text="Статистика"
-            android:textSize="18dp" />
+            android:text="@string/txt_statistics_button"
+            android:textSize="@dimen/txt_menu_size"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            app:drawableTopCompat="@drawable/ic_statisticks_button"
+            tools:ignore="SpUsage" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:textColor="@color/white"
-            android:text="Настройки"
-            android:textSize="18dp" />
+            android:text="@string/txt_settings_button"
+            android:textSize="@dimen/txt_menu_size"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            app:drawableTopCompat="@drawable/ic_settings_button"
+            tools:ignore="SpUsage" />
     </LinearLayout>
 
     <LinearLayout

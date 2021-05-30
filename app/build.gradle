@@ -61,4 +61,20 @@ dependencies {
     //MPAndroidChart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
+    //Dagger2
+    def daggerVersion = "2.35.1"
+    implementation "com.google.dagger:dagger-android:$daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    //CircularProgressView
+    implementation "com.github.rahatarmanahmed:circularprogressview:2.5.0"
+
+    //CircularImage
+    implementation "de.hdodenhof:circleimageview:3.1.0"
+
+    //Picasso
+    implementation "com.squareup.picasso:picasso:2.71828"
+
 }

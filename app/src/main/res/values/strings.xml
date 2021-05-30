@@ -3,4 +3,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="txt_last_sells">Последние покупки</string>
+    <string name="txt_filter_button">Фильтр</string>
+    <string name="txt_add_button">Добавить</string>
+    <string name="txt_statistics_button">Статистика</string>
+    <string name="txt_settings_button">Настройки</string>
 </resources>
