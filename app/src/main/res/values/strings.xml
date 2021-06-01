@@ -7,4 +7,8 @@
     <string name="txt_add_button">Добавить</string>
     <string name="txt_statistics_button">Статистика</string>
     <string name="txt_settings_button">Настройки</string>
+    <string name="txt_add_expense_toolbar">Добавление расхода</string>
+    <string name="txt_statistics_toolbar">Статистика</string>
+    <string name="txt_settings_toolbar">Настройки</string>
+    <string name="txt_filter_toolbar">Фильтр</string>
 </resources>

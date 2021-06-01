@@ -328,7 +328,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/snap/android-studio/103/android-studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/analytics/baseline_analytics_24.xml" />
+                                      <entry key="url" value="jar:file:/snap/android-studio/103/android-studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/west/baseline_west_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -338,8 +338,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffa100" />
-                            <entry key="outputName" value="ic_statisticks_button" />
+                            <entry key="outputName" value="ic_button_back" />
                           </map>
                         </option>
                       </PersistentState>

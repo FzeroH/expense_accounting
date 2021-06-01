@@ -1,7 +1,7 @@
 <vector
-    android:height="50dp"
-    android:width="50dp"
-    android:tint="#FFA100"
+    android:height="@dimen/size_icons_menu"
+    android:width="@dimen/size_icons_menu"
+    android:tint="@color/color_elements_menu"
     android:viewportHeight="24"
     android:viewportWidth="24"
     xmlns:android="http://schemas.android.com/apk/res/android">

@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pie_charts_color">#2645B6</color>
+    <color name="color_elements_menu">#FFE600</color>
 </resources>
