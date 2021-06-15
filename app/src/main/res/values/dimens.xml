@@ -3,4 +3,6 @@
     <dimen name="txt_menu_size">12dp</dimen>
     <dimen name="size_icons_menu">45dp</dimen>
     <dimen name="txt_toolbar_size">20dp</dimen>
+    <dimen name="text_size">20dp</dimen>
+    <dimen name="standart_margin_start">15dp</dimen>
 </resources>

@@ -11,4 +11,8 @@
     <string name="txt_statistics_toolbar">Статистика</string>
     <string name="txt_settings_toolbar">Настройки</string>
     <string name="txt_filter_toolbar">Фильтр</string>
+    <string name="txt_main_toolbar">Калькулятор расходов</string>
+    <string name="volume_tank">0</string>
+    <string name="all_types">Все типы</string>
+    <string name="txt_filter_period">За период</string>
 </resources>

@@ -8,41 +8,41 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.example.expenseaccounting.MainActivity
 import com.example.expenseaccounting.R
-import java.util.zip.Inflater
 
 class MainFragment : Fragment() {
 
-    private lateinit var add_btn: TextView
-    private lateinit var filter_btn: TextView
-    private lateinit var statistics_btn: TextView
-    private lateinit var settings_btn: TextView
+    private lateinit var addBtn: TextView
+    private lateinit var filterBtn: TextView
+    private lateinit var statisticsBtn: TextView
+    private lateinit var settingsBtn: TextView
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        var v: View = inflater.inflate(R.layout.fragment_main, container, false)
-        add_btn = v.findViewById(R.id.add_btn)
-        filter_btn = v.findViewById(R.id.filter_btn)
-        statistics_btn = v.findViewById(R.id.statistics_btn)
-        settings_btn = v.findViewById(R.id.settings_btn)
+    ): View {
+
+        val v: View = inflater.inflate(R.layout.fragment_main, container, false)
+        addBtn = v.findViewById(R.id.btn_add)
+        filterBtn = v.findViewById(R.id.btn_filter)
+        statisticsBtn = v.findViewById(R.id.btn_statistics)
+        settingsBtn = v.findViewById(R.id.btn_settings)
         return v
     }
 
     override fun onStart() {
         super.onStart()
-        add_btn.setOnClickListener{
+        addBtn.setOnClickListener{
             (activity as MainActivity).navController.navigate(R.id.action_mainFragment_to_addExpenseFragment)
         }
-        filter_btn.setOnClickListener{
+        filterBtn.setOnClickListener{
             (activity as MainActivity).navController.navigate(R.id.action_mainFragment_to_filterFragment)
         }
-        statistics_btn.setOnClickListener{
+        statisticsBtn.setOnClickListener{
             (activity as MainActivity).navController.navigate(R.id.action_mainFragment_to_statisticsFragment)
         }
-        settings_btn.setOnClickListener{
+        settingsBtn.setOnClickListener{
+            //Toast.makeText(context,"Раздел находится в разработке", LENGTH_LONG).show()
             (activity as MainActivity).navController.navigate(R.id.action_mainFragment_to_settingsFragment)
         }
     }

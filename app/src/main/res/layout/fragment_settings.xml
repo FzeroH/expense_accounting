@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background_app"
     tools:context=".fragments.SettingsFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_elements_menu">
+        android:background="@color/color_topbar">
 
         <ImageButton
             android:id="@+id/btn_settings_back"
@@ -27,4 +29,76 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-</FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сведения об автомобиле"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:layout_marginStart="@dimen/standart_margin_start"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="start"/>
+    <LinearLayout
+        android:id="@+id/btn_volume_tank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Объём бака, л"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginStart="@dimen/standart_margin_start"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_volume_tank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/volume_tank"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/color_separating_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Редактировать"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+                android:layout_marginStart="@dimen/standart_margin_start"
+                android:textColor="#FF8400"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_settings_chevrone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

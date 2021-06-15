@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="pie_charts_color">#2645B6</color>
     <color name="color_elements_menu">#FFE600</color>
+    <color name="color_topbar">#FFE600</color>
+    <color name="color_background_app">#DDDBDB</color>
+    <color name="color_separating_bar">#959595</color>
 </resources>

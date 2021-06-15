@@ -11,7 +11,7 @@ import com.example.expenseaccounting.R
 
 class AddExpenseFragment : Fragment() {
 
-    private lateinit var btn_add_expense_back: ImageView
+    private lateinit var btnAddExpenseBack: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -19,14 +19,14 @@ class AddExpenseFragment : Fragment() {
     ): View {
 
         val v:View = inflater.inflate(R.layout.fragment_add_expense, container, false)
-        btn_add_expense_back = v.findViewById(R.id.btn_add_expense_back)
+        btnAddExpenseBack = v.findViewById(R.id.btn_add_expense_back)
 
         return v
     }
 
     override fun onStart() {
         super.onStart()
-        btn_add_expense_back.setOnClickListener {
+        btnAddExpenseBack.setOnClickListener {
             (activity as MainActivity).navController.navigate(R.id.action_addExpenseFragment_to_mainFragment)
         }
     }

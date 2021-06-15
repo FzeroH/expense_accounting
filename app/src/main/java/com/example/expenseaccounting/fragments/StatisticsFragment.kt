@@ -8,26 +8,32 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import com.example.expenseaccounting.MainActivity
 import com.example.expenseaccounting.R
+import com.example.expenseaccounting.fragments.dialogfragments.FilterDialogFragment
 
 class StatisticsFragment : Fragment() {
 
-    private lateinit var btn_statistics_back: ImageView
+    private lateinit var btnStatisticsBack: ImageView
+    private lateinit var btnStatisticsPeriod: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
-        var v:View =  inflater.inflate(R.layout.fragment_statistics, container, false)
+        val v:View =  inflater.inflate(R.layout.fragment_statistics, container, false)
 
-        btn_statistics_back = v.findViewById(R.id.btn_statistics_back)
+        btnStatisticsBack = v.findViewById(R.id.btn_statistics_back)
+        btnStatisticsPeriod = v.findViewById(R.id.btn_statistics_period)
         return v
     }
 
     override fun onStart() {
         super.onStart()
-        btn_statistics_back.setOnClickListener {
+        btnStatisticsBack.setOnClickListener {
             (activity as MainActivity).navController.navigate(R.id.action_statisticsFragment_to_mainFragment)
+        }
+        btnStatisticsPeriod.setOnClickListener {
+            FilterDialogFragment().show(childFragmentManager, FilterDialogFragment.TAG) //TODO: Создать новый фрагмент
         }
     }
 }

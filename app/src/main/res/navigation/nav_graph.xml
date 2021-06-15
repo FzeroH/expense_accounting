@@ -47,8 +47,7 @@
         <action
             android:id="@+id/action_settingsFragment_to_mainFragment"
             app:destination="@id/mainFragment"
-            app:enterAnim="@anim/nav_default_exit_anim"
-            app:exitAnim="@animator/nav_default_exit_anim" />
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
     <fragment
         android:id="@+id/statisticsFragment"
@@ -58,8 +57,7 @@
         <action
             android:id="@+id/action_statisticsFragment_to_mainFragment"
             app:destination="@id/mainFragment"
-            app:enterAnim="@anim/nav_default_exit_anim"
-            app:exitAnim="@animator/nav_default_exit_anim" />
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
     <fragment
         android:id="@+id/addExpenseFragment"
@@ -69,8 +67,7 @@
         <action
             android:id="@+id/action_addExpenseFragment_to_mainFragment"
             app:destination="@id/mainFragment"
-            app:enterAnim="@anim/nav_default_exit_anim"
-            app:exitAnim="@animator/nav_default_exit_anim" />
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
     <fragment
         android:id="@+id/filterFragment"
@@ -80,7 +77,6 @@
         <action
             android:id="@+id/action_filterFragment_to_mainFragment"
             app:destination="@id/mainFragment"
-            app:enterAnim="@anim/nav_default_exit_anim"
-            app:exitAnim="@animator/nav_default_exit_anim" />
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
 </navigation>

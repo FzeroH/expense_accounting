@@ -328,7 +328,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/snap/android-studio/103/android-studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/west/baseline_west_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/date_range/baseline_date_range_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -338,7 +338,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_button_back" />
+                            <entry key="outputName" value="ic_calendar" />
+                            <entry key="sourceFile" value="C:\Users\Alex\Desktop\PL\expense_accounting" />
                           </map>
                         </option>
                       </PersistentState>
