@@ -1,4 +1,4 @@
-package com.example.expenseaccounting.fragments.dialogfragments
+package com.example.expenseaccounting.fragment.dialogfragment
 
 import android.app.AlertDialog
 import android.app.Dialog

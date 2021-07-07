@@ -1,4 +1,4 @@
-package com.example.expenseaccounting.fragments
+package com.example.expenseaccounting.fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -10,7 +10,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import com.example.expenseaccounting.MainActivity
 import com.example.expenseaccounting.R
-import com.example.expenseaccounting.fragments.dialogfragments.FilterDialogFragment
+import com.example.expenseaccounting.fragment.dialogfragment.FilterDialogFragment
 
 class FilterFragment : Fragment() {
 

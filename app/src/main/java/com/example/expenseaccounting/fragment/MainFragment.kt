@@ -1,4 +1,4 @@
-package com.example.expenseaccounting.fragments
+package com.example.expenseaccounting.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

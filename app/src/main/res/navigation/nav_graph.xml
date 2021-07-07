@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.expenseaccounting.fragments.MainFragment"
+        android:name="com.example.expenseaccounting.fragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.expenseaccounting.fragments.SettingsFragment"
+        android:name="com.example.expenseaccounting.fragment.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" >
         <action
@@ -51,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/statisticsFragment"
-        android:name="com.example.expenseaccounting.fragments.StatisticsFragment"
+        android:name="com.example.expenseaccounting.fragment.StatisticsFragment"
         android:label="fragment_statistics"
         tools:layout="@layout/fragment_statistics" >
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/addExpenseFragment"
-        android:name="com.example.expenseaccounting.fragments.AddExpenseFragment"
+        android:name="com.example.expenseaccounting.fragment.AddExpenseFragment"
         android:label="fragment_add_expense"
         tools:layout="@layout/fragment_add_expense" >
         <action
@@ -71,7 +71,7 @@
     </fragment>
     <fragment
         android:id="@+id/filterFragment"
-        android:name="com.example.expenseaccounting.fragments.FilterFragment"
+        android:name="com.example.expenseaccounting.fragment.FilterFragment"
         android:label="fragment_filter"
         tools:layout="@layout/fragment_filter" >
         <action

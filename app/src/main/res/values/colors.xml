@@ -12,4 +12,5 @@
     <color name="color_topbar">#FFE600</color>
     <color name="color_background_app">#DDDBDB</color>
     <color name="color_separating_bar">#959595</color>
+    <color name="color_dividing_line">#A6A3A3</color>
 </resources>

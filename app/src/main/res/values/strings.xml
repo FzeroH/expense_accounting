@@ -15,4 +15,8 @@
     <string name="volume_tank">0</string>
     <string name="all_types">Все типы</string>
     <string name="txt_filter_period">За период</string>
+    <string name="add_fuel">Топливо</string>
+    <string name="add_wash">Мойка</string>
+    <string name="add_parking">Парковка</string>
+    <string name="add_mileage">Пробег</string>
 </resources>
