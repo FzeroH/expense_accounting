@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="txt_menu_size">12dp</dimen>
-    <dimen name="size_icons_menu">45dp</dimen>
+    <dimen name="size_icons_menu">35dp</dimen>
     <dimen name="txt_toolbar_size">20dp</dimen>
     <dimen name="text_size">20dp</dimen>
-    <dimen name="standart_margin_start">15dp</dimen>
+    <dimen name="standart_margin_horizontal">15dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
 </resources>

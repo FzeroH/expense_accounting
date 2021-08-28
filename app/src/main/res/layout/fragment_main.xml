@@ -1,49 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/pie_charts_color"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.MainFragment">
+    tools:context=".screens.main.MainFragment">
+
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_topbar">
+        android:background="@color/color_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
             android:text="@string/txt_main_toolbar"
-            android:textSize="@dimen/txt_toolbar_size"
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginStart="50dp"/>
+            android:textSize="@dimen/txt_toolbar_size"
+            android:textStyle="bold" />
 
     </androidx.appcompat.widget.Toolbar>
+
     <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/PieChart"
+        android:id="@+id/pie_chart"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:background="@color/pie_charts_color"/>
+        android:layout_height="0dp"
+        android:background="@color/pie_charts_color"
+        app:layout_constraintBottom_toTopOf="@+id/list_items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <LinearLayout
         android:id="@+id/list_items"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         android:background="#072655"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
         <TextView
             android:id="@+id/btn_add"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:textColor="@color/white"
-            android:text="@string/txt_add_button"
-            android:textSize="@dimen/txt_menu_size"
-            android:textAlignment="center"
             android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/txt_add_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_menu_size"
             app:drawableTopCompat="@drawable/ic_add_button"
             tools:ignore="SpUsage" />
 
@@ -51,12 +65,12 @@
             android:id="@+id/btn_filter"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:textColor="@color/white"
-            android:text="@string/txt_filter_button"
-            android:textSize="@dimen/txt_menu_size"
-            android:textAlignment="center"
             android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/txt_filter_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_menu_size"
             app:drawableTopCompat="@drawable/ic_filter_button"
             tools:ignore="SpUsage" />
 
@@ -64,12 +78,12 @@
             android:id="@+id/btn_statistics"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:textColor="@color/white"
-            android:text="@string/txt_statistics_button"
-            android:textSize="@dimen/txt_menu_size"
-            android:textAlignment="center"
             android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/txt_statistics_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_menu_size"
             app:drawableTopCompat="@drawable/ic_statisticks_button"
             tools:ignore="SpUsage" />
 
@@ -77,37 +91,14 @@
             android:id="@+id/btn_settings"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:textColor="@color/white"
-            android:text="@string/txt_settings_button"
-            android:textSize="@dimen/txt_menu_size"
-            android:textAlignment="center"
             android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/txt_settings_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_menu_size"
             app:drawableTopCompat="@drawable/ic_settings_button"
             tools:ignore="SpUsage" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/last_sells"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="#C6C6C6"
-        android:orientation="vertical"
-        android:layout_weight="1">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/txt_last_sells"
-            android:textColor="@color/black"
-            android:textSize="25dp" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/list_last_sells"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp" />
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

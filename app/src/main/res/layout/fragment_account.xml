@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/color_background_app"
-    tools:context=".fragment.SettingsFragment">
+    tools:context=".screens.account.AccountFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textAllCaps="true"
-        android:layout_marginStart="@dimen/standart_margin_start"
+        android:layout_marginStart="@dimen/standart_margin_horizontal"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="10dp"
         android:layout_gravity="start"/>
@@ -58,7 +58,7 @@
                 android:text="Объём бака, л"
                 android:textColor="@color/black"
                 android:textSize="18dp"
-                android:layout_marginStart="@dimen/standart_margin_start"
+                android:layout_marginStart="@dimen/standart_margin_horizontal"
                 android:layout_marginTop="10dp"/>
 
             <TextView
@@ -92,7 +92,7 @@
                 android:textAllCaps="true"
                 android:textColor="#FF8400"
                 android:textSize="18dp"
-                android:layout_marginStart="@dimen/standart_margin_start"
+                android:layout_marginStart="@dimen/standart_margin_horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 

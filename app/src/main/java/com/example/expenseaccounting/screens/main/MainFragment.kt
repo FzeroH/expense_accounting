@@ -1,20 +1,26 @@
-package com.example.expenseaccounting.fragment
+package com.example.expenseaccounting.screens.main
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.GONE
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 import com.example.expenseaccounting.MainActivity
 import com.example.expenseaccounting.R
+import com.example.expenseaccounting.adapter.ExpenseAdapter
+import com.github.mikephil.charting.charts.PieChart
+import moxy.MvpAppCompatFragment
 
-class MainFragment : Fragment() {
+class MainFragment : MvpAppCompatFragment(){
 
     private lateinit var addBtn: TextView
     private lateinit var filterBtn: TextView
     private lateinit var statisticsBtn: TextView
     private lateinit var settingsBtn: TextView
+    private lateinit var pieChart: PieChart
 
 
     override fun onCreateView(
@@ -27,11 +33,13 @@ class MainFragment : Fragment() {
         filterBtn = v.findViewById(R.id.btn_filter)
         statisticsBtn = v.findViewById(R.id.btn_statistics)
         settingsBtn = v.findViewById(R.id.btn_settings)
+        pieChart = v.findViewById(R.id.pie_chart)
         return v
     }
 
     override fun onStart() {
         super.onStart()
+        pieChart.visibility = GONE //Временная заглушка
         addBtn.setOnClickListener{
             (activity as MainActivity).navController.navigate(R.id.action_mainFragment_to_addExpenseFragment)
         }

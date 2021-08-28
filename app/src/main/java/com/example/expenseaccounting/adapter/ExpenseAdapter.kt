@@ -1,4 +1,4 @@
-/*package com.example.expenseaccounting.adapter
+package com.example.expenseaccounting.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,11 +6,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.expenseaccounting.R
-import com.example.expenseaccounting.model.BaseExpenseModel
+import com.example.expenseaccounting.data.remote.expense.ExpenseAccountingApi
+import com.example.expenseaccounting.data.remote.expense.ExpenseAccountingResponse
 
-class AddExpenseAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class ExpenseAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    val expenseList: ArrayList<BaseExpenseModel> = ArrayList()
+    private var expenseList: List<ExpenseAccountingResponse> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -20,25 +21,29 @@ class AddExpenseAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is AddExpenseViewHolder) {
-            holder.bind(expenseModel = expenseList[position])
+            holder.bind(expenseResponse = expenseList[position])
         }
     }
 
     override fun getItemCount(): Int {
         return expenseList.count()
     }
+
+    fun setData(newExpenseList: List<ExpenseAccountingResponse>){
+        expenseList = newExpenseList
+        notifyDataSetChanged()
+    }
 }
 
 class AddExpenseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
     private var date: TextView = itemView.findViewById(R.id.txt_date_expense)
     private var typeExpense : TextView = itemView.findViewById(R.id.txt_type_expense)
-    private var litersExpense : TextView = itemView.findViewById(R.id.txt_liters_expense)
     private var costExpense : TextView = itemView.findViewById(R.id.txt_cost_expense)
 
-    fun bind(expenseModel: BaseExpenseModel) {
-        date.text = "${expenseModel.date}"
-        typeExpense.text = expenseModel.type
-        costExpense.text = "${expenseModel.cost}"
+    fun bind(expenseResponse: ExpenseAccountingResponse) {
+        date.text = "${expenseResponse.date}"
+        typeExpense.text = expenseResponse.title
+        costExpense.text = "${expenseResponse.quantity}"
 
     }
-}*/
+}

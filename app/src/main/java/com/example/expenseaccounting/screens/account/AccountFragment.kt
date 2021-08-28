@@ -1,7 +1,6 @@
-package com.example.expenseaccounting.fragment
+package com.example.expenseaccounting.screens.account
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,8 +10,9 @@ import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import com.example.expenseaccounting.MainActivity
 import com.example.expenseaccounting.R
+import moxy.MvpAppCompatFragment
 
-class SettingsFragment : Fragment() {
+class AccountFragment : MvpAppCompatFragment() {
 
     private lateinit var btnSettingsBack: ImageView
     private lateinit var btnVolumeTank: LinearLayout
@@ -21,7 +21,7 @@ class SettingsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        val v:View = inflater.inflate(R.layout.fragment_settings, container, false)
+        val v:View = inflater.inflate(R.layout.fragment_account, container, false)
 
         btnSettingsBack = v.findViewById(R.id.btn_settings_back)
         btnVolumeTank = v.findViewById(R.id.btn_volume_tank)

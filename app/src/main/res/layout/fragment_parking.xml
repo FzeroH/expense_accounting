@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background_app"
+    tools:context=".screens.addexpenses.types.FuelFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/parking_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_topbar">
+
+        <ImageButton
+            android:id="@+id/btn_parking_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_button_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/txt_parking_topbar"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_toolbar_size"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/parking_input_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:inputType=""
+            android:hint="@string/date_hint" />
+        <EditText
+            android:id="@+id/parking_input_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:inputType="number"
+            android:hint="@string/cost_hint"/>
+        <EditText
+            android:id="@+id/parking_input_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:inputType="text"
+            android:hint="@string/hint_comment"/>
+    </LinearLayout>
+
+</LinearLayout>

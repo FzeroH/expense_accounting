@@ -2,7 +2,7 @@
     <string name="app_name">Учёт расходов</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="txt_last_sells">Последние покупки</string>
+    <string name="txt_history_sells">Последние покупки</string>
     <string name="txt_filter_button">Фильтр</string>
     <string name="txt_add_button">Добавить</string>
     <string name="txt_statistics_button">Статистика</string>
@@ -19,4 +19,25 @@
     <string name="add_wash">Мойка</string>
     <string name="add_parking">Парковка</string>
     <string name="add_mileage">Пробег</string>
+    <string name="date_expense">Дата</string>
+    <string name="type_expense">Тип расхода</string>
+    <string name="cost_expense">Цена</string>
+    <string name="liters_expense">литр</string>
+    <string name="date_hint">Дата</string>
+    <string name="cost_hint">Стоимость, руб.</string>
+    <string name="hint_comment">Комментарий</string>
+    <string name="txt_fuel_topbar">Топливо</string>
+    <string name="txt_wash_topbar">Мойка</string>
+    <string name="txt_parking_topbar">Парковка</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="txt_login">Авторизация</string>
+    <string name="txt_registration">Регистрация</string>
 </resources>

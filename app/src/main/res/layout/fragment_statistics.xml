@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/color_background_app"
-    tools:context=".fragment.StatisticsFragment">
+    tools:context=".screens.statistics.StatisticsFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -35,15 +35,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:background="?attr/selectableItemBackground"
         android:layout_marginTop="10dp">
 
         <TextView
+            android:id="@+id/statistics_period_from"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="За период"
             android:textColor="@color/black"
             android:textSize="@dimen/text_size"
-            android:layout_marginStart="@dimen/standart_margin_start"
+            android:layout_marginStart="@dimen/standart_margin_horizontal"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -55,5 +58,28 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/history_sells"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txt_history_sells"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_history_sells"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+    </LinearLayout>
 
 </LinearLayout>
