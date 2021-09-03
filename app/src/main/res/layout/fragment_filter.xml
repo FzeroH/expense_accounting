@@ -31,6 +31,14 @@
             android:textColor="@color/black"
             android:textSize="@dimen/txt_toolbar_size"
             android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_filter_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bnt_save"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp" />
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
@@ -108,13 +116,4 @@
 
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/btn_filter_save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_bnt_filter_save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

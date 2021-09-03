@@ -7,14 +7,11 @@ import android.view.View.GONE
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
 import com.example.expenseaccounting.MainActivity
 import com.example.expenseaccounting.R
-import com.example.expenseaccounting.adapter.ExpenseAdapter
 import com.github.mikephil.charting.charts.PieChart
-import moxy.MvpAppCompatFragment
 
-class MainFragment : MvpAppCompatFragment(){
+class MainFragment : Fragment(){
 
     private lateinit var addBtn: TextView
     private lateinit var filterBtn: TextView

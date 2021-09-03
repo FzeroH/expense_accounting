@@ -45,6 +45,27 @@
             android:textColor="@color/black"
             android:layout_marginStart="@dimen/standart_margin_horizontal"/>
 
+        <TextView
+            android:id="@+id/txt_quantity_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity_expense"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/standart_margin_horizontal"/>
+
+        <TextView
+            android:id="@+id/txt_comment_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment_expense"
+            android:textSize="14dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/standart_margin_horizontal"/>
+
     </LinearLayout>
 
 </LinearLayout>

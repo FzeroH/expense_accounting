@@ -5,24 +5,23 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.PopupMenu
-import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
+import android.widget.*
+import android.widget.Toast.LENGTH_SHORT
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.expenseaccounting.MainActivity
 import com.example.expenseaccounting.R
-import moxy.MvpAppCompatFragment
-import org.w3c.dom.Text
 
-class AddExpenseFragment : MvpAppCompatFragment() {
+class AddExpenseFragment : Fragment() {
 
     private lateinit var btnAddExpenseBack: ImageView
-    private lateinit var btnAddFuel: ConstraintLayout
-    private lateinit var btnAddWash: ConstraintLayout
-    private lateinit var btnAddParking: ConstraintLayout
     private lateinit var showTypesMenu: TextView
     private lateinit var popupMenu: PopupMenu
+    private lateinit var btnAddExpense: ImageButton
+    private lateinit var inputPrice: EditText
+    private lateinit var inputComment: EditText
+
+
 
 
     override fun onCreateView(
@@ -32,44 +31,43 @@ class AddExpenseFragment : MvpAppCompatFragment() {
 
         val v:View = inflater.inflate(R.layout.fragment_add_expense, container, false)
         btnAddExpenseBack = v.findViewById(R.id.btn_add_expense_back)
-        /*btnAddFuel = v.findViewById(R.id.add_fuel)
-        btnAddWash = v.findViewById(R.id.add_wash)
-        btnAddParking = v.findViewById(R.id.add_parking)*/
         showTypesMenu = v.findViewById(R.id.show_types_menu)
+        btnAddExpense = v.findViewById(R.id.btn_add_expense)
+        inputPrice = v.findViewById(R.id.input_price)
+        inputComment = v.findViewById(R.id.input_comment)
         popupMenu = PopupMenu(context, showTypesMenu)
         popupMenu.menuInflater.inflate(R.menu.add_expense_type_menu, popupMenu.menu)
+
         return v
     }
 
     @SuppressLint("ResourceAsColor")
     override fun onStart() {
         super.onStart()
+        val addExpenseViewModel = ViewModelProvider(this).get(AddExpenseViewModel::class.java)
+
         btnAddExpenseBack.setOnClickListener {
             (activity as MainActivity).navController.navigate(R.id.action_addExpenseFragment_to_mainFragment)
         }
-        /*btnAddFuel.setOnClickListener {
-            (activity as MainActivity).navController.navigate(R.id.action_addExpenseFragment_to_fuelFragment)
+        btnAddExpense.setOnClickListener {
+            addExpenseViewModel.addExpense(title = showTypesMenu.text.toString(),
+                price = inputPrice.text.toString().toDouble(),
+                quantity = 1,
+                comment = inputComment.text.toString())
+            Toast.makeText(requireContext(),"Расход добавлен",LENGTH_SHORT).show()
         }
-        btnAddWash.setOnClickListener {
-            (activity as MainActivity).navController.navigate(R.id.action_addExpenseFragment_to_washFragment)
-        }
-        btnAddParking.setOnClickListener {
-            (activity as MainActivity).navController.navigate(R.id.action_addExpenseFragment_to_parkingFragment)
-        }*/
-
         popupMenu.setOnMenuItemClickListener {
 
-            if(it.itemId == R.id.wash_type){
-                showTypesMenu.text = "Мойка"
-
-            }
-            else if (it.itemId == R.id.parking_type){
-
-                showTypesMenu.text = "Парковка"
-            }
-            else if (it.itemId == R.id.fuel_type){
-
-                showTypesMenu.text = "Топливо"
+            when (it.itemId) {
+                R.id.wash_type -> {
+                    showTypesMenu.text = "Мойка"
+                }
+                R.id.parking_type -> {
+                    showTypesMenu.text = "Парковка"
+                }
+                R.id.fuel_type -> {
+                    showTypesMenu.text = "Топливо"
+                }
             }
             false
         }
@@ -78,4 +76,5 @@ class AddExpenseFragment : MvpAppCompatFragment() {
         }
 
     }
+
 }

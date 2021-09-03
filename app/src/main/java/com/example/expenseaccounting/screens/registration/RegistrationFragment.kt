@@ -1,14 +1,13 @@
-package com.example.expenseaccounting.registration
+package com.example.expenseaccounting.screens.registration
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.expenseaccounting.R
-import moxy.MvpAppCompatFragment
 
-class RegistrationFragment : MvpAppCompatFragment() {
+class RegistrationFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -6,7 +6,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/sauru/Desktop/GitRep/expense_accounting/app/src/main/res/layout/fragment_add_expense.xml" value="0.19074074074074074" />
+        <entry key="..\:/Users/sauru/Desktop/GitRep/expense_accounting/app/src/main/res/drawable/ic_add_button.xml" value="0.2942708333333333" />
+        <entry key="..\:/Users/sauru/Desktop/GitRep/expense_accounting/app/src/main/res/drawable/ic_bnt_filter_save.xml" value="0.1453125" />
+        <entry key="..\:/Users/sauru/Desktop/GitRep/expense_accounting/app/src/main/res/layout/fragment_add_expense.xml" value="0.33" />
+        <entry key="..\:/Users/sauru/Desktop/GitRep/expense_accounting/app/src/main/res/layout/fragment_filter.xml" value="0.278125" />
         <entry key="..\:/Users/sauru/Desktop/GitRep/expense_accounting/app/src/main/res/layout/fragment_statistics.xml" value="0.27384615384615385" />
         <entry key="..\:/Users/sauru/Desktop/GitRep/expense_accounting/app/src/main/res/layout/last_expense_item.xml" value="0.21666666666666667" />
       </map>

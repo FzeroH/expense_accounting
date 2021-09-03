@@ -40,4 +40,6 @@
     <string name="login_failed">"Login failed"</string>
     <string name="txt_login">Авторизация</string>
     <string name="txt_registration">Регистрация</string>
+    <string name="comment_expense">Комментарий</string>
+    <string name="quantity_expense">Количество</string>
 </resources>

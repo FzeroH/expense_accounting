@@ -13,13 +13,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import com.example.expenseaccounting.MainActivity
 import com.example.expenseaccounting.R
-import moxy.MvpAppCompatFragment
 import java.util.Calendar.getInstance
 
 
-class FilterFragment : MvpAppCompatFragment() {
+class FilterFragment : Fragment() {
 
     private lateinit var btnFilterBack: ImageView
     private lateinit var btnFilterSave: ImageView

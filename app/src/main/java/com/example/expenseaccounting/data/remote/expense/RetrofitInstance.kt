@@ -1,5 +1,6 @@
 package com.example.expenseaccounting.data.remote.expense
 
+import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -14,6 +15,7 @@ object RetrofitInstance {
         .addInterceptor(httpLoggingInterceptor)
         .build()
 
+    //val gson = GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create()
     private val retrofit by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)

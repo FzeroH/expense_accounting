@@ -1,17 +1,11 @@
-package com.example.expenseaccounting.model
+package com.example.expenseaccounting.data.remote.expense.model
 
 import com.google.gson.annotations.SerializedName
-import java.util.*
 
-data class ExpenseModel(
-    @SerializedName("id")
-    val expenseId: Int,
+data class ExpenseRequestModel(
 
     @SerializedName("title")
     val title: String,
-
-    @SerializedName("created_date")
-    val date: Calendar,
 
     @SerializedName("unit_price")
     val price: Double,
@@ -20,4 +14,5 @@ data class ExpenseModel(
     val quantity: Int,
 
     @SerializedName("comment")
-    val comment: String)
+    val comment: String?
+)

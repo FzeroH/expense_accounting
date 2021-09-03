@@ -13,6 +13,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.expenseaccounting.MainActivity
 import com.example.expenseaccounting.R
@@ -20,8 +21,6 @@ import com.example.expenseaccounting.adapter.ExpenseAdapter
 
 class StatisticsFragment : Fragment() {
 
-   // @InjectPresenter
-    //lateinit var mPresenter: StatisticsPresenter
 
     private lateinit var btnStatisticsBack: ImageView
     private lateinit var btnStatisticsPeriod: View
@@ -54,6 +53,7 @@ class StatisticsFragment : Fragment() {
         listHistorySell = v.findViewById(R.id.list_history_sells)
         expenseAdapter = ExpenseAdapter()
         listHistorySell.adapter = expenseAdapter
+        listHistorySell.layoutManager = LinearLayoutManager(requireContext())
         listHistorySell.setHasFixedSize(true)
 
         val statisticsViewModel = ViewModelProvider(this).get(StatisticsViewModel::class.java)

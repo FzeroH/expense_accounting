@@ -68,18 +68,6 @@
             android:id="@+id/action_addExpenseFragment_to_mainFragment"
             app:destination="@id/mainFragment"
             app:enterAnim="@anim/nav_default_enter_anim" />
-        <action
-            android:id="@+id/action_addExpenseFragment_to_fuelFragment"
-            app:destination="@id/fuelFragment"
-            app:enterAnim="@anim/nav_default_enter_anim" />
-        <action
-            android:id="@+id/action_addExpenseFragment_to_parkingFragment"
-            app:destination="@id/parkingFragment"
-            app:enterAnim="@anim/nav_default_enter_anim" />
-        <action
-            android:id="@+id/action_addExpenseFragment_to_washFragment"
-            app:destination="@id/washFragment"
-            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
     <fragment
         android:id="@+id/filterFragment"
@@ -90,38 +78,5 @@
             android:id="@+id/action_filterFragment_to_mainFragment"
             app:destination="@id/mainFragment"
             app:enterAnim="@anim/nav_default_enter_anim" />
-    </fragment>
-    <fragment
-        android:id="@+id/fuelFragment"
-        android:name="com.example.expenseaccounting.screens.addexpenses.types.FuelFragment"
-        android:label="fragment_fuel"
-        tools:layout="@layout/fragment_fuel" >
-        <action
-            android:id="@+id/action_fuelFragment_to_addExpenseFragment"
-            app:destination="@id/addExpenseFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
-    </fragment>
-    <fragment
-        android:id="@+id/parkingFragment"
-        android:name="com.example.expenseaccounting.screens.addexpenses.types.ParkingFragment"
-        android:label="fragment_parking"
-        tools:layout="@layout/fragment_parking" >
-        <action
-            android:id="@+id/action_parkingFragment_to_addExpenseFragment"
-            app:destination="@id/addExpenseFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
-    </fragment>
-    <fragment
-        android:id="@+id/washFragment"
-        android:name="com.example.expenseaccounting.screens.addexpenses.types.WashFragment"
-        android:label="fragment_wash"
-        tools:layout="@layout/fragment_wash" >
-        <action
-            android:id="@+id/action_washFragment_to_addExpenseFragment"
-            app:destination="@id/addExpenseFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.expenseaccounting.model
+package com.example.expenseaccounting.data.remote.expense.model
 
 data class User (
     var firstName: String,
